@@ -77,6 +77,11 @@
       overflow: hidden;
       
       font-family: 'Droid Sans', sans-serif;
+      color: #FFF;
+    }
+    
+    h1 {
+      font-size: 300%;
     }
     
     a[href^="tel:"]:before {
@@ -89,23 +94,23 @@
       display: table;
       
       /* fallback */
-      background-color: #2F2727;
+      background-color: #435a6b;
     
       /* Safari 4-5, Chrome 1-9 */
       /* Can't specify a percentage size? Laaaaaame. */
-      background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+      background: -webkit-gradient(radial, center center, 0, center center, 460, from(#435a6b), to(#354856));
     
       /* Safari 5.1+, Chrome 10+ */
-      background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+      background: -webkit-radial-gradient(circle, #435a6b, #354856);
     
       /* Firefox 3.6+ */
-      background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+      background: -moz-radial-gradient(circle, #435a6b, #354856);
     
       /* IE 10 */
-      background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
+      background: -ms-radial-gradient(circle, #435a6b, #354856);
       
       /* Standards */
-      background: radial-gradient(circle, #1a82f7, #2F2727);
+      background: radial-gradient(circle, #435a6b, #354856);
     }
     
     article {
@@ -127,6 +132,9 @@
     }
     
     footer > span {
+      display: inline-block;
+      padding: 0.2em 1.2em;
+      white-space: nowrap;
     }
   </style>
 </head>
@@ -139,7 +147,7 @@
       <footer>
         <span class="email">e-mail: <a href="mailto:sales@helmaus.com.au?Subject=Sales%20inquiry" target="_top">sales@helmaus.com.au</a></span>
         <span class="phone">phone: <span itemprop="telephone"><a href="tel:+61294577288">(02) 9457 7288</a></span></span>
-        <span class="fax">fax: <span itemprop="faxNumber">(02) 9457 7388</span></span>
+        <span class="fax">fax: <span itemprop="faxNumber"><a href="#">(02) 9457 7388</a></span></span>
         <span class="address">locate: <a href="https://www.google.com.au/maps/place/4a%2F16-18+Beaumont+Rd/@-33.641985,151.131114,17z/data=!3m1!4b1!4m2!3m1!1s0x6b0d59e7aee6d44d:0x8bafcb62fc69855a">google maps</a></span>
       </footer>
     </section>
